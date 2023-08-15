@@ -1,1 +1,1 @@
-var serviceUrlDev = "http://localhost:3002/api/";
+var serviceUrlDev = "https://project-blog-post.onrender.com/api/";
