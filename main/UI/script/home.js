@@ -8,6 +8,7 @@ function getAllPost() {
     url: `${serviceUrlDev}getAllPost`,
     success: function (data) {
       let $card = $("#card");
+      $card.empty();
       if (data && data.length) {
         data.forEach((item) => {
           let tem = `<div class="card w-100 mt-3 mb-3">
