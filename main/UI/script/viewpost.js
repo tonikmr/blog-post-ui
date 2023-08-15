@@ -12,6 +12,7 @@ function getAllPost() {
     url: `${serviceUrlDev}getpost?email=${email}`,
     success: function (data) {
       let $card = $("#card");
+      $card.empty();
       if (data && data.isExist && data.post.length) {
         data.post.forEach((item) => {
           let tem = `<div class="card w-100 mt-3">
