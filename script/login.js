@@ -19,7 +19,7 @@ $("#login-form").on("submit", function (event) {
         localStorage.setItem("user", JSON.stringify(data.user));
         alert("Log in successfully.");
         setTimeout(() => {
-          location.href = "/UI/html/home.html";
+          location.href = "/UI/html/index.html";
         }, 200);
       }
       if (data && !data.isExist) {
